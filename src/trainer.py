@@ -165,7 +165,7 @@ class HMRTrainer(object):
           1. model_type is "resnet"
           2. pretrained_model_path is not None
           3. model_dir is NOT empty, meaning we're picking up from previous
-             so fuck this pretrained model.
+             so exempt this pretrained model.
         """
         if ('resnet' in self.model_type) and (self.pretrained_model_path is
                                               not None):
